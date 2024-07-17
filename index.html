@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom Div Designer</title>
+        <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+        <div class="container">
+                <div class="funcyion-div">
+                        <div class="controlar-div">
+                                <div class="label-data">
+
+                                        <label for="widthRange">Width: <span id="widthValue">100px</span></label>
+                                        <input type="range" id="widthRange" min="0" max="2000" value="100" />
+
+                                        <label for="minwidthRange">Min-Width: <span id="minwidthValue">100px</span></label>
+                                        <input type="range" id="minwidthRange" min="0" max="2000" value="100" />
+
+                                        <label for="heightRange">Height: <span id="heightValue">100px</span></label>
+                                        <input type="range" id="heightRange" min="0" max="2000" value="100" />
+                                        <label for="borderSizeRange">Border Size: <span
+                                                        id="borderSizeValue">1px</span></label>
+                                        <input type="range" id="borderSizeRange" min="0" max="50" value="1" />
+
+                                        <label for="backgroundColor">Background Color: </label>
+                                        <input type="color" id="backgroundColor" value="#ffffff" />
+                                </div>
+                                <div class="label-data">
+                                        <label for="borderRadiusTopLeftRange">Border Radius Top Left:
+                                                <span id="borderRadiusTopLeftValue">0px</span></label>
+                                        <input type="range" id="borderRadiusTopLeftRange" min="0" max="2000"
+                                                value="0" />
+
+                                        <label for="borderRadiusTopRightRange">Border Radius Top Right:
+                                                <span id="borderRadiusTopRightValue">0px</span></label>
+                                        <input type="range" id="borderRadiusTopRightRange" min="0" max="2000"
+                                                value="0" />
+
+                                        <label for="borderRadiusBottomLeftRange">Border Radius Bottom Left:
+                                                <span id="borderRadiusBottomLeftValue">0px</span></label>
+                                        <input type="range" id="borderRadiusBottomLeftRange" min="0" max="2000"
+                                                value="0" />
+
+                                        <label for="borderRadiusBottomRightRange">Border Radius Bottom Right:
+                                                <span id="borderRadiusBottomRightValue">0px</span></label>
+                                        <input type="range" id="borderRadiusBottomRightRange" min="0" max="2000"
+                                                value="0" />
+                                        
+                                        <label for="borderColor">Border Color: </label>
+                                        <input type="color" id="borderColor" value="#000000" />
+
+                                </div>
+                                <div class="label-data">
+                                        <!-- Outside Shadow -->
+                                        <label for="shadowOutsideTopRange">Outside Shadow Vertical:
+                                                <span id="shadowOutsideTopValue">0px</span></label>
+                                        <input type="range" id="shadowOutsideTopRange" min="-500" max="500" value="0" />
+
+                                        <label for="shadowOutsideLeftRange">Outside Shadow Horizontal:
+                                                <span id="shadowOutsideLeftValue">0px</span></label>
+                                        <input type="range" id="shadowOutsideLeftRange" min="-500" max="500" value="0" />
+
+                                        <label for="shadowOutsideRightRange">Outside Shadow Opacity:
+                                                <span id="shadowOutsideRightValue">0px</span></label>
+                                        <input type="range" id="shadowOutsideRightRange" min="0" max="700" value="0" />
+
+                                        <label for="shadowOutsideBottomRange">Outside Shadow Scale:
+                                                <span id="shadowOutsideBottomValue">0px</span></label>
+                                        <input type="range" id="shadowOutsideBottomRange" min="-100" max="100"
+                                                value="0" />
+
+                                        <label for="shadowOutsideColor">Outside Shadow Color: </label>
+                                        <input type="color" id="shadowOutsideColor" value="#000000" />
+                                </div>
+                                <div class="label-data">
+                                        <!-- Inside Shadow -->
+                                        <label for="shadowInsideTopRange">Inside Shadow Vertical:
+                                                <span id="shadowInsideTopValue">0px</span></label>
+                                        <input type="range" id="shadowInsideTopRange" min="0" max="50" value="0" />
+
+                                        <label for="shadowInsideLeftRange">Inside Shadow Horizontal:
+                                                <span id="shadowInsideLeftValue">0px</span></label>
+                                        <input type="range" id="shadowInsideLeftRange" min="0" max="50" value="0" />
+
+                                        <label for="shadowInsideRightRange">Inside Shadow Opacity:
+                                                <span id="shadowInsideRightValue">0px</span></label>
+                                        <input type="range" id="shadowInsideRightRange" min="0" max="50" value="0" />
+
+                                        <label for="shadowInsideBottomRange">Inside Shadow Scale:
+                                                <span id="shadowInsideBottomValue">0px</span></label>
+                                        <input type="range" id="shadowInsideBottomRange" min="0" max="50" value="0" />
+
+                                        <label for="shadowInsideColor">Inside Shadow Color: </label>
+                                        <input type="color" id="shadowInsideColor" value="#000000" />
+                                        
+                                </div>
+                        </div>
+                        <div class="output-div">
+                        <textarea id="cssCode" readonly></textarea>
+                        <button id="generateCssButton">Generate CSS</button>
+                    </div>
+                </div>
+            
+                    <div id="customDiv"></div>
+                
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
